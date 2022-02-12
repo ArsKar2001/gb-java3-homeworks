@@ -22,7 +22,7 @@ public class Box<F extends Fruit> {
                 .sum();
     }
 
-    public boolean compare(Box<?> box) {
+    public boolean compare(Box<? super Fruit> box) {
         return getWeight() == box.getWeight();
     }
 

@@ -23,12 +23,15 @@ public class Main {
         appleBox.add(new Apple());
         appleBox.add(new Apple());
 
+        Box box = new Box();
 
 
         System.out.println("appleBox.getWeight() = " + appleBox.getWeight());
         System.out.println("orangeBox.getWeight() = " + orangeBox1.getWeight());
 
         System.out.println("appleBox.compare(orangeBox) = " + appleBox.compare(orangeBox1));
+
+        appleBox.compare(box);
 
         Box<Orange> toBox = new Box<>();
         orangeBox1.putAll(toBox);
